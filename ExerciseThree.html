@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="ExerciseThree.css">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Travel Reservation Form</h1>
+  <form class="form">
+    <table>
+      <tbody>
+        <tr>
+          <td>Full Name:</td>
+          <td>
+            <input type="text" placeholder="John Smith" required>
+          </td>
+        </tr>
+        <tr>
+          <td>Gender:</td>
+          <td>
+            <input type="radio" id="M" name="Gender" required>
+            <label for="M">Male</label>
+            <input type="radio" id="F" name="Gender" >
+            <label for="F">Female</label >
+            <input type="radio" id="O" name="Gender" >
+            <label for="O">Others</label>
+          </td>
+        </tr>
+        <tr>
+          <td>Email Address:</td>
+          <td><input type="text" required></td>
+        </tr>
+        <tr>
+          <td>Select Tour Package:</td>
+          <td>
+            <select>
+              <option value="">Paris</option>
+              <option value="">Amestrdam</option>
+              <option value="">USA</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Arrival Date:</td>
+          <td><input type="date" required></td>
+        </tr>
+        <tr>
+          <td id="annoying">Purpose?</td>
+          <td id="annoying-td">
+            <div>
+              <input type="checkbox" id="V">
+              <label for="V">Vacation</label>
+            </div>
+            
+            <div>
+              <input type="checkbox" id="B">
+              <label for="B">Business</label>
+            </div>
+            
+            <div>
+              <input type="checkbox" id="SS">
+              <label for="SS">Sight seeing</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Discount Coupon Code:</td>
+          <td><input type="text" value="FLY2023" required></td>
+        </tr>
+      </tbody>
+    </table>
+    <fieldset>
+      <legend>Extra Information</legend>
+      <textarea id="in-case" cols="74" rows="10" placeholder="Write here" required></textarea>
+    </fieldset>
+    <p id="terms-p">Terms and conditions*</p> <br>
+    <input type="radio" id="A" name="same" required>
+    <label for="A">I agree</label>
+    <input type="radio" id="D" name="same"  required>
+    <label for="D">I disagree</label><br><br>
+    <input type="submit" value="Complete Reservation">
+  </form>
+</body>
+</html>
